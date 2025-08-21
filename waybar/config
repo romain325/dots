@@ -78,12 +78,12 @@
     "pulseaudio": {
         "format": "{icon}",
         "format-bluetooth": " ",
-        "format-bluetooth-muted": " ",
-        "format-muted": "婢",
+        "format-bluetooth-muted": "婢 ",
+        "format-muted": ""婢,
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
