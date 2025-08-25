@@ -79,7 +79,7 @@
         "format": "{icon}",
         "format-bluetooth": " ",
         "format-bluetooth-muted": "婢 ",
-        "format-muted": ""婢,
+        "format-muted": "婢",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -147,5 +147,5 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "rofi -show drun",
-    },
+    }
 }
