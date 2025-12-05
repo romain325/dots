@@ -1,0 +1,36 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "options": {
+    "disable_metrics": true
+  },
+  "mcp": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "$CONTEXT7_API"
+      }
+    }
+  },
+  "lsp": {
+    "go": {
+      "command": "gopls"
+    },
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": [
+        "--stdio"
+      ]
+    }
+  },
+  "providers": {
+    "anthropic": {
+      "api_key": "Bearer $(anthropic-api-key)",
+      "extra_headers": {
+        "anthropic-version": "2024-06-01",
+        "anthropic-beta": "oauth-2025-04-20"
+      },
+      "system_prompt_prefix": "You are Claude Code, Anthropic's official CLI for Claude."
+    }
+  }
+}
