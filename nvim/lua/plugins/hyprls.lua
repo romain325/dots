@@ -8,6 +8,7 @@ return {
     opts.config = opts.config or {}
     opts.config.hyprlang = {
       cmd = { "hyprls" },
+      root_dir = require("lspconfig.util").find_git_ancestor,
       settings = {
         preferIgnoreFile = true,
         ignore = { "hyprlock.conf" }
