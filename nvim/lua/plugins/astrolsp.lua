@@ -1,18 +1,15 @@
--- Configuration documentation can be found with `:h astrolsp`
-
----@type LazySpec
 return {
   {
     "b0o/schemastore.nvim",
   },
-  ---@type LazySpec
   {
     "AstroNvim/astrolsp",
     dependencies = {
-      "b0o/schemastore.nvim",
+      {"b0o/schemastore.nvim"},
     },
+    
     ---@param opts AstroLSPOpts
-    opts = function(plugin,opts)
+    opts = function(_, opts)
       opts.features = require("astrocore").extend_tbl(opts.feature or {}, {
         codelens = true, -- enable/disable codelens refresh on start
         inlay_hints = false, -- enable/disable inlay hints on start
@@ -28,7 +25,6 @@ return {
         timeout_ms = 10000, 
       })
 
-      -- customize language server configuration options passed to `lspconfig`
       ---@diagnostic disable: missing-fields
       opts.config = {
         ts_ls = {
