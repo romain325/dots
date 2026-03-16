@@ -1,3 +1,9 @@
+-- vim.filetype.add({
+--   pattern = {
+--     [".*/hypr/.*%.conf"] = "hyprlang",
+--   },
+-- })
+
 return {
   "AstroNvim/astrolsp",
   ---@param opts AstroLSPOpts
@@ -7,8 +13,7 @@ return {
 
     opts.config = opts.config or {}
     opts.config.hyprlang = {
-      cmd = { "hyprls" },
-      root_dir = require("lspconfig.util").find_git_ancestor,
+      cmd = { "hyprls", "--stdio" },
       settings = {
         preferIgnoreFile = true,
         ignore = { "hyprlock.conf" }
