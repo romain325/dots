@@ -5,7 +5,7 @@ return {
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = {
-      ensure_installed = { "vue-language-server", "stylua", "lua-language-server", "debugpy", "java-debug-adapter" },
+      ensure_installed = { "json-lsp", "yaml-language-server", "vue-language-server", "stylua", "lua-language-server", "debugpy", "java-debug-adapter" },
     },
   },
   {
