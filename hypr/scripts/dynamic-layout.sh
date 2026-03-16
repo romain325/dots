@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Dynamic Layout Manager for Hyprland
 # Manages borders, gaps, and waybar based on window count and override mode
